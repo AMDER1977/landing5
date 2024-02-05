@@ -10,19 +10,25 @@ body {
 
 .text-container {
   position: absolute;
-  top: 50px;
-  left: 50px;
-  width: 50%; /* Ajusta el ancho según tus necesidades */
+  top: 160px;
+  left: 100px;
+  width: 40%;
 }
 
 .text-container .title-container {
+  margin-top: 50px;
   margin-bottom: 20px;
   font-family: "Times New Roman-Regular", Times, serif;
   font-size: 34px;
+  font-weight: lighter;
   color: white;
+  margin-bottom: 20px;
 }
 .left-container .text-secundary {
+  margin-top: 20px;
   color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .button-container {
@@ -50,18 +56,6 @@ body {
   align-items: center;
 }
 
-.fondo-arco-inverso {
-  width: 450px;
-  height: 550px;
-  border-radius: 0 0 48% 48%;
-  position: absolute;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.05) 0%,
-    rgba(255, 255, 255, 0.8) 106%
-  );
-}
-
 .image-container {
   margin-top: 60px;
   width: 80%;
@@ -72,9 +66,17 @@ body {
   width: 70vh;
   height: 70vh;
 }
-
-.vector img {
-  width: 20%; /* Ajusta el ancho de la imagen según tus necesidades */
+.fondo-arco-inverso {
+  width: 450px;
+  height: 550px;
+  border-radius: 0 0 48% 48%;
+  position: absolute;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.8) 106%
+  );
+  z-index: -1;
 }
 
 .elipse {
@@ -83,19 +85,31 @@ body {
   left: 500px;
 }
 .elipse img {
-  width: 100px;
+  width: 150px;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-around;
-  margin-top: 40px;
+  align-items: center;
+  margin-top: 500px;
+  margin-left: 20px;
+  margin-right: 0;
+  padding: 20px;
+  background-color: #333; /* Ajusta el color de fondo según tus 
+  color: white; /* Ajusta el color del texto según tus necesidades */
 }
 
 .frames-container {
+  background-color: #faefe3;
+  margin: 8px;
+  border-radius: 20px;
   text-align: center;
 }
 
-.frames-container img {
-  width: 50%; /* Ajusta el ancho de la imagen según tus necesidades */
+.frames-container .vector {
+  width: 12%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
