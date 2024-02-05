@@ -4,8 +4,17 @@
   box-sizing: border-box;
 }
 body {
+  margin: 0;
+  font-family: "Times New Roman-Regular", Times, serif;
+  width: 100%;
+}
+.background-container {
+  min-height: 80vh;
+  position: relative;
+  /* overflow: hidden; */
   background-color: #efaf64;
-  width: 80%;
+  z-index: -1;
+  width: 100%;
 }
 
 .text-container {
@@ -13,12 +22,13 @@ body {
   top: 160px;
   left: 100px;
   width: 40%;
+  color: white;
 }
 
 .text-container .title-container {
   margin-top: 50px;
   margin-bottom: 20px;
-  font-family: "Times New Roman-Regular", Times, serif;
+
   font-size: 34px;
   font-weight: lighter;
   color: white;
@@ -32,11 +42,12 @@ body {
 }
 
 .button-container {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .button-container button {
   width: 160px;
   height: 54px;
+  border: none;
   border-radius: 28px;
   background-color: #fe6e06;
   color: white;
@@ -57,18 +68,17 @@ body {
 }
 
 .image-container {
-  margin-top: 60px;
-  width: 80%;
-  height: 75%;
+  margin-top: 110px;
 }
 .image-container img {
-  top: 60px;
-  width: 70vh;
-  height: 70vh;
+  top: 80px;
+
+  height: 76vh;
+  z-index: 1;
 }
 .fondo-arco-inverso {
-  width: 450px;
-  height: 550px;
+  width: 58vh;
+  height: 74vh;
   border-radius: 0 0 48% 48%;
   position: absolute;
   background-image: linear-gradient(
@@ -81,35 +91,50 @@ body {
 
 .elipse {
   position: relative;
-  top: 70px;
-  left: 500px;
+  top: 130px;
+  left: 325px;
 }
 .elipse img {
-  width: 150px;
+  width: 106px;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 500px;
-  margin-left: 20px;
-  margin-right: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: 20px;
-  background-color: #333; /* Ajusta el color de fondo según tus 
-  color: white; /* Ajusta el color del texto según tus necesidades */
+  left: 20px;
+  position: relative;
+  top: 400px;
 }
 
 .frames-container {
+  width: 160px;
+  height: 140px;
   background-color: #faefe3;
-  margin: 8px;
+  margin-right: 20px;
   border-radius: 20px;
-  text-align: center;
 }
 
 .frames-container .vector {
-  width: 12%;
-  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
+
+  margin-bottom: 10px;
+}
+
+.frames-container .vector img {
+  width: 20px;
+  margin: 14px 14px 8px 14px;
+}
+.frames-container .titulo-span {
+  margin-left: 10px;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.frames-container .contenido-span {
+  display: block;
+  margin-top: 4px;
+  margin-left: 8px;
 }
