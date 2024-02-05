@@ -20,7 +20,7 @@ body {
 .text-container {
   position: absolute;
   top: 160px;
-  left: 100px;
+  left: 80px;
   width: 40%;
   color: white;
 }
@@ -28,7 +28,6 @@ body {
 .text-container .title-container {
   margin-top: 50px;
   margin-bottom: 20px;
-
   font-size: 34px;
   font-weight: lighter;
   color: white;
@@ -37,7 +36,8 @@ body {
 .left-container .text-secundary {
   margin-top: 20px;
   color: white;
-  font-size: 20px;
+  font-family: "Helvetica Neue", "Helvetica";
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
@@ -51,8 +51,6 @@ body {
   border-radius: 28px;
   background-color: #fe6e06;
   color: white;
-  margin-left: 20px;
-  margin-top: 20px;
 }
 
 .rigth-container {
@@ -102,10 +100,10 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 20px;
-  left: 20px;
+  padding: 30px;
+  left: 40px;
   position: relative;
-  top: 400px;
+  top: 450px;
 }
 
 .frames-container {
